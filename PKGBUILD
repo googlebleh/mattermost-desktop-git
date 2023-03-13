@@ -11,7 +11,7 @@ url="https://github.com/mattermost/desktop"
 license=('Apache')
 
 makedepends=('nodejs' 'npm' 'asar' 'rpm-tools' 'git')
-depends=('alsa-lib' 'gtk3' 'libnotify' 'nss' 'libxss' 'libxtst' 'xdg-utils' 'libutil-linux' 'libappindicator-gtk3' 'libsecret')
+depends=('alsa-lib' 'gtk3' 'libnotify' 'nss' 'libxss' 'libxtst' 'xdg-utils' 'libutil-linux' 'libappindicator-gtk3' 'libsecret' 'libxcrypt-compat')
 optdepends=()
 
 conflicts=('mattermost-desktop')
