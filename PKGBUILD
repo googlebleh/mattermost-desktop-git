@@ -47,6 +47,6 @@ package() {
 }
 
 pkgver() {
-  cd 'desktop'
-  git describe --long | sed 's/v//'
+  # cutting off 'v' prefix that presents in the git tag
+  git -C desktop describe --long --abbrev=7 | sed 's/^v//;s/\([^-]*-g\)/r\1/;s/-/./g'
 }
